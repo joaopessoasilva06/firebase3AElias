@@ -1,2 +1,133 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Endereço</title>
 
-ggfdgfddggfdf
+    <style>
+      body {
+        font-family: Arial;
+        background: #d9d9d9;
+      }
+
+      fieldset {
+        background-color: rgb(182, 216, 221);
+        width: 900px;
+        padding: 20px;
+      }
+
+      
+      .linha {
+        display: grid;
+
+        grid-template-columns:
+          120px
+          250px
+          120px
+          250px;
+
+        align-items: center;
+
+        margin-bottom: 15px;
+      }
+
+      
+      .linha-unica {
+        display: grid;
+
+        grid-template-columns:
+          120px
+          400px;
+
+        align-items: center;
+
+        margin-bottom: 15px;
+      }
+
+      
+      input {
+        height: 24px;
+        padding-left: 5px;
+      }
+
+      
+      .grande {
+        width: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>Endereço</legend>
+
+      <form id="formulario">
+        <!-- CEP -->
+        <div class="linha-unica">
+          <label>CEP:</label>
+          <input id="cep" type="text" />
+        </div>
+
+        <!-- ENDEREÇO -->
+        <div class="linha-unica">
+          <label>Endereço:</label>
+          <input id="endereco" class="grande" type="text" />
+        </div>
+
+        <!-- COMPLEMENTO -->
+        <div class="linha">
+          <label>Complemento:</label>
+          <input id="complemento" type="text" />
+
+          <label>Bairro:</label>
+          <input id="bairro" type="text" />
+        </div>
+
+        <!-- CIDADE -->
+        <div class="linha-unica">
+          <label>Cidade:</label>
+          <input id="cidade" type="text" />
+        </div>
+
+        <!-- TELEFONE 1 -->
+        <div class="linha">
+          <label>Telefone1:</label>
+          <input id="telefone1" type="text" />
+
+          <label>Complemento1:</label>
+          <input id="complemento1" type="text" />
+        </div>
+
+        <!-- TELEFONE 2 -->
+        <div class="linha">
+          <label>Telefone2:</label>
+          <input id="telefone2" type="text" />
+
+          <label>Complemento2:</label>
+          <input id="complemento2" type="text" />
+        </div>
+
+        <!-- CELULAR -->
+        <div class="linha">
+          <label>Celular:</label>
+          <input id="celular" type="text" />
+
+          <label>Complemento3:</label>
+          <input id="complemento3" type="text" />
+        </div>
+
+        <!-- FAX -->
+        <div class="linha">
+          <label>Fax:</label>
+          <input id="fax" type="text" />
+
+          <label>Complemento4:</label>
+          <input id="complemento4" type="text" />
+        </div>
+
+        <input type="submit" value="Cadastrar" />
+      </form>
+    </fieldset>
+  </body>
+</html>
